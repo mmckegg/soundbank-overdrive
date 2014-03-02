@@ -3,6 +3,8 @@ soundbank-overdrive
 
 A simple audio distortion effect based on wave shaping with automatable filter and gain controls.
 
+Based on Nick Thomson's [Overdrive](https://github.com/nick-thompson/wa-overdrive), but modified to allow direct AudioParam manipulation allowing easy automation and modulation.
+
 ## Install
 
 ```bash
