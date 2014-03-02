@@ -3,7 +3,7 @@ soundbank-overdrive
 
 A simple audio distortion effect based on wave shaping with automatable filter and gain controls.
 
-Based on Nick Thompson's [Overdrive](https://github.com/nick-thompson/wa-overdrive), but modified to allow direct AudioParam manipulation allowing easy automation and modulation.
+Based on Nick Thompson's [Overdrive](https://github.com/nick-thompson/wa-overdrive), but modified to allow direct [AudioParam](https://developer.mozilla.org/en-US/docs/Web/API/AudioParam) manipulation allowing easy automation and modulation.
 
 ## Install
 
