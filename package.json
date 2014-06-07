@@ -1,6 +1,6 @@
 {
   "name": "soundbank-overdrive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple audio distortion effect based on wave shaping with automatable filter and gain controls.",
   "main": "index.js",
   "dependencies": {
