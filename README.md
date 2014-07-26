@@ -42,7 +42,7 @@ Post filter frequency cutoff
 ```
 var Overdrive = require('soundbank-overdrive')
 
-var audioContext = new webkitAudioContext()
+var audioContext = new AudioContext()
 
 var overdrive = Overdrive(audioContext)
 overdrive.connect(audioContext.destination)

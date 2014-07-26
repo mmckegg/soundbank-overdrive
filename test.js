@@ -1,6 +1,6 @@
 var Overdrive = require('./index')
 
-var audioContext = new webkitAudioContext()
+var audioContext = new AudioContext()
 
 audioContext.sampleCache = {}
 loadSample('/samples/duh.wav', function(err, buffer){
