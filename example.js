@@ -27,20 +27,20 @@ addButton('stop sound', function(){
   }
 })
 
-addSlider(overdrive.gain)
-addSlider(overdrive.preBand)
-addSlider(overdrive.color)
-addSlider(overdrive.postCut)
+addSlider('gain', overdrive.gain, 0.1, 0, 100)
+addSlider('preBand', overdrive.preBand, 0.01, 0, 1)
+addSlider('color', overdrive.color)
+addSlider('postCut', overdrive.postCut)
 
-function addSlider(param, step, min, max){
+function addSlider(name, param, step, min, max){
   var container = document.createElement('div')
-  container.appendChild(document.createTextNode(param.name))
-  var label = document.createTextNode(param.defaultValue)
+  container.appendChild(document.createTextNode(name))
+  var label = document.createTextNode(param.value)
   var slider = document.createElement('input')
   slider.type = 'range'
 
-  var min = min != null ? min : (param.min || 0)
-  var max = max != null ? max : (param.max || 100)
+  var min = min != null ? min : (param.minValue || 0)
+  var max = max != null ? max : (param.maxValue || 100)
 
   var range = max - min
 
@@ -48,11 +48,11 @@ function addSlider(param, step, min, max){
   slider.max = max
   slider.step = step || (range / 100)
 
-  slider.value = param.defaultValue
+  slider.value = param.value
   slider.style.width = '300px'
 
 
-  slider.onchange = function(){
+  slider.oninput = function(){
     label.data = this.value
     param.value = parseFloat(this.value)
   }

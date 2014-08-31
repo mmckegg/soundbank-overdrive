@@ -3,13 +3,11 @@
   "version": "0.0.4",
   "description": "A simple audio distortion effect based on wave shaping with automatable filter and gain controls.",
   "main": "index.js",
-  "dependencies": {
-    "audio-param-transform": "^1.0.0",
-    "custom-audio-node": "^0.3.0"
+  "devDependencies": {
+    "beefy": "^2.1.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "beefy test.js"
+    "example": "beefy example.js"
   },
   "repository": {
     "type": "git",
